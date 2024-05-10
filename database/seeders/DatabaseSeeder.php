@@ -30,7 +30,7 @@ class DatabaseSeeder extends Seeder
         Project::factory()->create([
             'nama' => 'FoodGrub',
             'techStack' => 'PHP | Laravel | MySQL',
-            'deskripsi' => 'Point of Sales application',
+            'deskripsi' => 'Point of Sales application for F&B business. Business can create and track orders',
             'jmlFoto' => 4,
             'fileEkstensi' => 'png',
             'linkRepo' => 'github.com/rajariandhana/fpcamin',
@@ -39,11 +39,18 @@ class DatabaseSeeder extends Seeder
         Project::factory()->create([
             'nama' => 'StudyKanji',
             'techStack' => 'HTML | CSS | JavaScript',
-            'deskripsi' => 'Personal project to help me and my friends learning Japanese',
+            'deskripsi' => 'Personal project to help me and my friends learning Japanese. Not optimized for desktop',
             'jmlFoto' => 3,
             'fileEkstensi' => 'png',
             'linkRepo' => 'github.com/rajariandhana/kanji',
             'linkDemo' => 'ralfazza.com/kanji',
+        ]);
+        Project::factory()->create([
+            'nama' => 'Checkers',
+            'techStack' => 'Unity | C#',
+            'deskripsi' => 'Just a replication of a checkers game. Unfortunately it is a bit difficult to put it on the web so I am sorry about the aspect ratio',
+            'linkRepo' => 'github.com/rajariandhana/dev_checkers',
+            'linkDemo' => 'checkers.ralfazza.com',
         ]);
         Project::factory()->create([
             'nama' => 'Postitivity',
