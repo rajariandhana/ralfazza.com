@@ -39,7 +39,7 @@ class DatabaseSeeder extends Seeder
         Project::factory()->create([
             'nama' => 'StudyKanji',
             'techStack' => 'HTML | CSS | JavaScript',
-            'deskripsi' => 'Personal project to help me and my friends learning Japanese. Not optimized for desktop',
+            'deskripsi' => 'Personal project to help me and my friends learn Japanese Kanji. Not optimized for desktop',
             'jmlFoto' => 3,
             'fileEkstensi' => 'png',
             'linkRepo' => 'github.com/rajariandhana/kanji',

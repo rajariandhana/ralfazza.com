@@ -44,6 +44,9 @@
                     <li class="nav-item px-3"><a class="nav-link" href="/merch">
                             <h4 class="blue">Merch</h4>
                         </a></li>
+                    <li class="nav-item px-3"><a class="nav-link" href="/cv">
+                            <h4 class="orange">CV</h4>
+                        </a></li>
                 </ul>
             </div>
         </div>
@@ -84,7 +87,7 @@
             </ul>
         </div>
     </div> --}}
-    <div class="container main">
+    <div class="container py-5 main">
         @yield('main')
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

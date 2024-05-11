@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\CVController;
 
 Route::get('/', function () {
     return view('home',[
@@ -12,3 +13,4 @@ Route::get('/', function () {
 
 Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('/gallery', [GalleryController::class, 'index']);
+Route::get('/cv', [CVController::class, 'index']);

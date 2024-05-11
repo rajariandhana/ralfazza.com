@@ -6,7 +6,7 @@
 @endsection
 
 @section('main')
-    <div class="container py-5">
+    <div class="container">
         <div class="row row-cols-1 row-cols-md-2 g-4">
             @foreach ($projects as $project)
                 <div class="col">
@@ -29,7 +29,7 @@
                                             alt="{{ $project->nama }}_1.{{ $project->fileEkstensi }}">
                                     </div>
                                     @for ($i = 2; $i <= $project->jmlFoto; $i++)
-                                        <div class="carousel-item ">
+                                        <div class="carousel-item">
                                             <img src="Asset/Projects/{{ $project->nama }}/{{ $i }}.{{ $project->fileEkstensi }}"
                                                 class="d-block w-100 img-thumbnail projectFoto"
                                                 alt="{{ $project->nama }}_{{ $i }}.{{ $project->fileEkstensi }}">
