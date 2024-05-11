@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use App\Models\User;
 use App\Models\Project;
+use App\Models\Employer;
+use App\Models\Position;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -27,6 +29,82 @@ class DatabaseSeeder extends Seeder
         //     'linkRepo' => '',
         //     'linkDemo' => '',
         // ]);
+        Employer::factory()->create([
+            'nama'=>'ITS Surabaya',
+            'namaSlug'=>'ITS_Surabaya',
+        ]);
+        Employer::factory()->create([
+            'nama'=>'Schematics ITS',
+            'namaSlug'=>'Schematics_ITS',
+        ]);
+        Employer::factory()->create([
+            'nama'=>'Alpro ITS',
+            'namaSlug'=>'Alpro_ITS',
+        ]);
+
+        Position::factory()->create([
+            'posisi'=>'Data Structures Teaching Assistant',
+            'posisiSlug'=>'Data_Structures_Teaching_Assistant',
+            'employer_nama'=>'ITS Surabaya',
+            'deskripsi'=>'Teaches international students data structures and algorithms using C/C++. Creates programming problems for quizzes and lab works. Assist lecturers in grading students.',
+            'skill'=>'',
+            'tgl'=>'February 2024 - Present',
+            // 'mulai'=>'February 2024',
+            // 'selesai'=>'Present',
+        ]);
+        Position::factory()->create([
+            'posisi'=>'Basic Programming Teaching Assistant',
+            'posisiSlug'=>'Basic_Programming_Teaching_Assistant',
+            'employer_nama'=>'ITS Surabaya',
+            'deskripsi'=>'Teaches international students basic programming using C programming language up until simple sorting and searching algorithms. Creates programming problems for quizzes and lab works. Assist the lecturer in grading students.',
+            'skill'=>'',
+            'tgl'=>'August 2023 - December 2023',
+            // 'mulai'=>'August 2023',
+            // 'selesai'=>'December 2023',
+        ]);
+        Position::factory()->create([
+            'posisi'=>'Research Assistant',
+            'posisiSlug'=>'Research_Assistant',
+            'employer_nama'=>'ITS Surabaya',
+            'deskripsi'=>'Aide the lecturer\'s research by creating python scripts to analyze data.',
+            'skill'=>'',
+            'tgl'=>'December 2023 - Present',
+            // 'mulai'=>'December 2023',
+            // 'selesai'=>'Present',
+        ]);
+
+        Position::factory()->create([
+            'posisi'=>'Game Developer',
+            'posisiSlug'=>'Game_Developer_2023',
+            'employer_nama'=>'Schematics ITS',
+            'deskripsi'=>'Worked in a team to develop games using C# with Unity Engine for Schematics 2023. The games were played by over 1000 participants in the elimination round.',
+            'skill'=>'',
+            'tgl'=>'February 2023 - November 2023',
+            // 'mulai'=>'February 2023',
+            // 'selesai'=>'November 2023',
+        ]);
+        Position::factory()->create([
+            'posisi'=>'Game Developer',
+            'posisiSlug'=>'Game_Developer_2024',
+            'employer_nama'=>'Schematics ITS',
+            'deskripsi'=>'Design and develop games from zero using C# with Unity Engine to be used in the Schematics 2024.',
+            'skill'=>'',
+            'tgl'=>'January 2024 - Present',
+            // 'mulai'=>'January 2024',
+            // 'selesai'=>'Present',
+        ]);
+
+        Position::factory()->create([
+            'posisi'=>'Lab Administrator',
+            'posisiSlug'=>'Lab_Administrator',
+            'employer_nama'=>'Alpro ITS',
+            'deskripsi'=>'Administrator for ITS Informatics Engineering’s Algorithms and Programming Laboratory. Vice Coordinator for the Data Structures course.',
+            'skill'=>'',
+            'tgl'=>'January 2024 - Present',
+            // 'mulai'=>'January 2024',
+            // 'selesai'=>'Present',
+        ]);
+
         Project::factory()->create([
             'nama' => 'FoodGrub',
             'techStack' => 'PHP | Laravel | MySQL',
