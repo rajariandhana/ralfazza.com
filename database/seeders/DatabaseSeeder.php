@@ -75,7 +75,7 @@ class DatabaseSeeder extends Seeder
 
         Position::factory()->create([
             'posisi'=>'Game Developer',
-            'posisiSlug'=>'Game_Developer_2023',
+            'posisiSlug'=>'Game_Developer',
             'employer_nama'=>'Schematics ITS',
             'deskripsi'=>'Worked in a team to develop games using C# with Unity Engine for Schematics 2023. The games were played by over 1000 participants in the elimination round.',
             'skill'=>'',
@@ -84,8 +84,8 @@ class DatabaseSeeder extends Seeder
             // 'selesai'=>'November 2023',
         ]);
         Position::factory()->create([
-            'posisi'=>'Game Developer',
-            'posisiSlug'=>'Game_Developer_2024',
+            'posisi'=>'Expert Game Developer',
+            'posisiSlug'=>'Expert_Game_Developer',
             'employer_nama'=>'Schematics ITS',
             'deskripsi'=>'Design and develop games from zero using C# with Unity Engine to be used in the Schematics 2024.',
             'skill'=>'',
@@ -98,13 +98,22 @@ class DatabaseSeeder extends Seeder
             'posisi'=>'Lab Administrator',
             'posisiSlug'=>'Lab_Administrator',
             'employer_nama'=>'Alpro ITS',
-            'deskripsi'=>'Administrator for ITS Informatics Engineering’s Algorithms and Programming Laboratory. Vice Coordinator for the Data Structures course.',
+            'deskripsi'=>'Administrator for ITS Informatics Engineering\'s Algorithms and Programming Laboratory. Vice Coordinator for the Data Structures course.',
             'skill'=>'',
             'tgl'=>'January 2024 - Present',
             // 'mulai'=>'January 2024',
             // 'selesai'=>'Present',
         ]);
 
+        Project::factory()->create([
+            'nama' => 'Minesweeper',
+            'techStack' => 'HTML | CSS | JavaScript',
+            'deskripsi' => 'For my Design & Analysis of Algorithms course, I chose to create a game of minesweeper which applies the Breadth First Search algorithm when revealing cells that does not have a mine in it. Kind of proud of this one since I already know the basic and just needed a bit help from GPT for minor syntax stuffs',
+            // 'jmlFoto' => 1,
+            'fileEkstensi' => 'png',
+            'linkRepo' => 'github.com/rajariandhana/minesweeper',
+            'linkDemo' => 'minesweeper.ralfazza.com',
+        ]);
         Project::factory()->create([
             'nama' => 'FoodGrub',
             'techStack' => 'PHP | Laravel | MySQL',
