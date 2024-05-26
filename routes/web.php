@@ -16,3 +16,8 @@ Route::get('/projects', [ProjectController::class, 'index']);
 Route::get('/gallery', [GalleryController::class, 'index']);
 Route::get('/merch', [MerchController::class, 'index']);
 Route::get('/cv', [CVController::class, 'index']);
+Route::get('/download-cv', function () {
+    $filePath = public_path('Asset/CV/CV_RalfazzaRajariandhana.pdf');
+    $fileName = 'CV_RalfazzaRajariandhana.pdf';
+    return response()->download($filePath, $fileName);
+});

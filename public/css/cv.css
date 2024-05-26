@@ -1,0 +1,51 @@
+.download-cv
+{
+    margin-bottom: 2em;
+}
+.download-cv a
+{
+    color: var(--orange);
+    font-size: 2em;
+}
+
+.employer-name-icon
+{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+.employer-name-icon img
+{
+    /* background-color: blue; */
+    height: 3em;
+    margin-bottom: 1em;
+}
+.employer-name-icon h2
+{
+    /* background-color: green; */
+    color: var(--orange);
+    color: black;
+}
+
+.testClass
+{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.testClass img
+{
+    height: 3em;
+    width: 3em;
+    object-fit: cover;
+    background-color: blue;
+}
+.testClass h2
+{
+    font-family: Arial, Helvetica, sans-serif;
+
+}

@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('nama')->unique();
             $table->string('namaSlug')->unique();
+            $table->string('link')->nullable();
+            $table->text('deskripsi')->nullable();
             $table->timestamps();
         });
     }

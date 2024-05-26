@@ -32,14 +32,20 @@ class DatabaseSeeder extends Seeder
         Employer::factory()->create([
             'nama'=>'ITS Surabaya',
             'namaSlug'=>'ITS_Surabaya',
+            'link'=>'https://www.its.ac.id',
+            'deskripsi'=>'This is my campus, got here in 2022 to study Informatics Engineering. It\'s like one of the best educational institute in the country.',
         ]);
         Employer::factory()->create([
             'nama'=>'Schematics ITS',
             'namaSlug'=>'Schematics_ITS',
+            'link'=>'https://schematics-its.com',
+            'deskripsi'=>'Where I learn game development. It\'s like an annual event, there is logic competition, programming competition, bootcamp and seminars, as well as the fun stuffs.',
         ]);
         Employer::factory()->create([
             'nama'=>'Alpro ITS',
             'namaSlug'=>'Alpro_ITS',
+            'link'=>'https://www.its.ac.id/informatika/id/fasilitas/laboratorium/laboratorium-algoritma-dan-pemrograman/',
+            'deskripsi'=>'One of many Informatics Engineering Department\'s laboratorium.',
         ]);
 
         Position::factory()->create([
@@ -53,16 +59,6 @@ class DatabaseSeeder extends Seeder
             // 'selesai'=>'Present',
         ]);
         Position::factory()->create([
-            'posisi'=>'Basic Programming Teaching Assistant',
-            'posisiSlug'=>'Basic_Programming_Teaching_Assistant',
-            'employer_nama'=>'ITS Surabaya',
-            'deskripsi'=>'Teaches international students basic programming using C programming language up until simple sorting and searching algorithms. Creates programming problems for quizzes and lab works. Assist the lecturer in grading students.',
-            'skill'=>'',
-            'tgl'=>'August 2023 - December 2023',
-            // 'mulai'=>'August 2023',
-            // 'selesai'=>'December 2023',
-        ]);
-        Position::factory()->create([
             'posisi'=>'Research Assistant',
             'posisiSlug'=>'Research_Assistant',
             'employer_nama'=>'ITS Surabaya',
@@ -72,17 +68,17 @@ class DatabaseSeeder extends Seeder
             // 'mulai'=>'December 2023',
             // 'selesai'=>'Present',
         ]);
-
         Position::factory()->create([
-            'posisi'=>'Game Developer',
-            'posisiSlug'=>'Game_Developer',
-            'employer_nama'=>'Schematics ITS',
-            'deskripsi'=>'Worked in a team to develop games using C# with Unity Engine for Schematics 2023. The games were played by over 1000 participants in the elimination round.',
+            'posisi'=>'Basic Programming Teaching Assistant',
+            'posisiSlug'=>'Basic_Programming_Teaching_Assistant',
+            'employer_nama'=>'ITS Surabaya',
+            'deskripsi'=>'Teaches international students basic programming using C programming language up until simple sorting and searching algorithms. Creates programming problems for quizzes and lab works. Assist the lecturer in grading students.',
             'skill'=>'',
-            'tgl'=>'February 2023 - November 2023',
-            // 'mulai'=>'February 2023',
-            // 'selesai'=>'November 2023',
+            'tgl'=>'August 2023 - December 2023',
+            // 'mulai'=>'August 2023',
+            // 'selesai'=>'December 2023',
         ]);
+        
         Position::factory()->create([
             'posisi'=>'Expert Game Developer',
             'posisiSlug'=>'Expert_Game_Developer',
@@ -92,6 +88,16 @@ class DatabaseSeeder extends Seeder
             'tgl'=>'January 2024 - Present',
             // 'mulai'=>'January 2024',
             // 'selesai'=>'Present',
+        ]);
+        Position::factory()->create([
+            'posisi'=>'Game Developer',
+            'posisiSlug'=>'Game_Developer',
+            'employer_nama'=>'Schematics ITS',
+            'deskripsi'=>'Worked in a team to develop games using C# with Unity Engine for Schematics 2023. The games were played by over 1000 participants in the elimination round.',
+            'skill'=>'',
+            'tgl'=>'February 2023 - November 2023',
+            // 'mulai'=>'February 2023',
+            // 'selesai'=>'November 2023',
         ]);
 
         Position::factory()->create([
@@ -108,8 +114,8 @@ class DatabaseSeeder extends Seeder
         Project::factory()->create([
             'nama' => 'Minesweeper',
             'techStack' => 'HTML | CSS | JavaScript',
-            'deskripsi' => 'For my Design & Analysis of Algorithms course, I chose to create a game of minesweeper which applies the Breadth First Search algorithm when revealing cells that does not have a mine in it. Kind of proud of this one since I already know the basic and just needed a bit help from GPT for minor syntax stuffs',
-            // 'jmlFoto' => 1,
+            'deskripsi' => 'For my Design & Analysis of Algorithms course, I chose to create a game of minesweeper which applies the Breadth First Search algorithm when revealing cells that does not have a mine in it. Kind of proud of this one since I already know the basic and just needed a bit help from GPT for minor syntax stuffs.',
+            'jmlFoto' => 3,
             'fileEkstensi' => 'png',
             'linkRepo' => 'github.com/rajariandhana/minesweeper',
             'linkDemo' => 'minesweeper.ralfazza.com',
@@ -117,7 +123,7 @@ class DatabaseSeeder extends Seeder
         Project::factory()->create([
             'nama' => 'FoodGrub',
             'techStack' => 'PHP | Laravel | MySQL',
-            'deskripsi' => 'Point of Sales application for F&B business. Business can create and track orders',
+            'deskripsi' => 'Simple point of Sales application for F&B business. Business owner can perform CRUD to menus, create and track order, as well as to filter order based on dates.',
             'jmlFoto' => 4,
             'fileEkstensi' => 'png',
             'linkRepo' => 'github.com/rajariandhana/fpcamin',
@@ -136,6 +142,8 @@ class DatabaseSeeder extends Seeder
             'nama' => 'Checkers',
             'techStack' => 'Unity | C#',
             'deskripsi' => 'Just a replication of a checkers game. Unfortunately it is a bit difficult to put it on the web so I am sorry about the aspect ratio',
+            'jmlFoto' => 2,
+            'fileEkstensi' => 'png',
             'linkRepo' => 'github.com/rajariandhana/dev_checkers',
             'linkDemo' => 'checkers.ralfazza.com',
         ]);
